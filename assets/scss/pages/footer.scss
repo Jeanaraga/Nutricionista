@@ -1,0 +1,140 @@
+.footer {
+     background-color: #c4dfc5; // Fundo verde claro
+     padding: 40px 20px;
+   
+     .footer-container {
+       max-width: 1200px;
+       margin: 0 auto;
+   
+       .footer-content {
+         text-align: center;
+   
+         .footer-title {
+           font-size: 1.8rem;
+           color: #2d5c3c; // Verde escuro
+           margin-bottom: 20px;
+         }
+   
+         .footer-contact {
+           list-style: none;
+           padding: 0;
+           font-size: 1rem;
+   
+           li {
+             color: #333;
+             margin-bottom: 10px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             gap: 10px;
+   
+             i {
+               color: #2d5c3c; // Ícones em verde escuro
+               font-size: 1.2rem;
+             }
+           }
+         }
+       }
+   
+       .footer-rights {
+         border-top: 1px solid #a3c5a5; // Linha separadora
+         margin-top: 20px;
+         padding-top: 10px;
+         text-align: center;
+   
+         p {
+           font-size: 0.9rem;
+           color: #333;
+         }
+       }
+     }
+   }
+   
+   @media (max-width: 1024px) {
+    .footer {
+        padding: 30px 15px;
+
+        .footer-container {
+            .footer-content {
+                .footer-title {
+                    font-size: 1.6rem;
+                }
+
+                .footer-contact {
+                    font-size: 0.95rem;
+
+                    li {
+                        gap: 8px;
+
+                        i {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .footer-rights {
+                p {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 25px 10px;
+
+        .footer-container {
+            .footer-content {
+                .footer-title {
+                    font-size: 1.4rem;
+                }
+
+                .footer-contact {
+                    font-size: 0.9rem;
+
+                    li {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .footer-rights {
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;
+
+        .footer-container {
+            .footer-content {
+                .footer-title {
+                    font-size: 1.2rem;
+                }
+
+                .footer-contact {
+                    font-size: 0.85rem;
+
+                    li {
+                      align-items: start;
+                    }
+                }
+            }
+
+            .footer-rights {
+                p {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+}

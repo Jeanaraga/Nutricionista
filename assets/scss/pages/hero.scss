@@ -1,0 +1,96 @@
+.hero {
+     display: flex;
+     justify-content: start;
+     padding: 50px;
+     padding-left: 200px;
+     align-items: center;
+     width: 100%;
+     height: 720px;
+     background-image: url('../img/bg-main.jpg');
+     background-position: center;
+     
+
+     .hero-content {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          max-width: 700px;
+          width: 60%;
+          gap: 20px;
+
+          h1 {
+               font-family: "Sour Gummy", serif;
+               font-size: 56px;
+               line-height: 1.0;
+               color: #4CAF50;
+          }
+
+          p {
+               font-size: 18px;
+               font-weight: 500;
+               color: #193d1a;
+               width: 80%;
+          }
+
+          .btn-primary {
+               padding: 10px 20px;
+               border: none;
+               background-color: #4CAF50;
+               color: #fff;
+               font-size: 20px;
+               font-weight: 500;
+               cursor: pointer;
+               text-decoration: none;
+               font-family: "Sour Gummy", serif;
+               border-radius: 8px;
+               transition: all 0.3s ease; 
+
+               &:hover {
+                    background-color: #fcfffc;
+                    color: #4CAF50;
+                    padding-right: 40px;
+               }
+          }
+     }
+
+    
+}
+
+@media (max-width: 1024px) {
+     .hero {
+          padding-left: 50px;
+          background-position: center;
+
+          .hero-content {
+               width: 80%;
+          }
+     }
+}
+
+@media (max-width: 650px) {
+     .hero {
+          height: 900px;
+          background-image: url('../img/bg-mobile.png');
+          background-position: center;
+          background-size: cover;
+          padding: 20px;
+
+          .hero-content {
+               align-items: start;
+               width: 100%;
+               gap: 15px;
+
+               h1 {
+                    font-size: 42px;
+               }
+
+               p {
+                    font-size: 15px;
+               }
+
+               .btn-primary {
+                    font-size: 16px;
+               }
+          }
+     }
+}
