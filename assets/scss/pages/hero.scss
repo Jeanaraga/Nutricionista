@@ -1,103 +1,94 @@
 .hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   min-height: 80vh;
-  display: flex;
-  align-items: center;
-  padding: 80px 150px;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url("../img/bg-main.jpg");
+  padding: 80px 40px;
+
+  background-image: url('../img/bg-main.jpg');
   background-position: center;
   background-size: cover;
 
   .hero-content {
-    max-width: 650px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    align-items: flex-start;
+    max-width: 600px;
+    gap: 20px;
 
     h1 {
       font-family: "Sour Gummy", serif;
-      font-size: 56px;
+      font-size: 54px;
       line-height: 1.1;
-      color: #4caf50;
+      color: #4CAF50;
     }
 
     p {
       font-size: 18px;
       font-weight: 500;
       color: #193d1a;
-      max-width: 550px;
     }
 
     .btn-primary {
-      padding: 12px 22px;
-      background-color: #4caf50;
+      padding: 12px 24px;
+      border-radius: 10px;
+      background-color: #4CAF50;
       color: #fff;
       font-size: 20px;
       font-weight: 600;
       text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s ease;
+      transition: .3s ease;
 
       &:hover {
-        background-color: #fff;
-        color: #4caf50;
-        padding-left: 30px;
+        background-color: #ffffff;
+        color: #4CAF50;
       }
     }
   }
 }
 
-/* ------- TABLET ------- */
+/* TABLET */
 @media (max-width: 1024px) {
   .hero {
-    padding: 60px 40px;
+    padding: 60px 30px;
 
     .hero-content {
-      max-width: 80%;
-
-      h1 {
-        font-size: 46px;
-      }
-      p {
-        font-size: 17px;
-      }
+      max-width: 90%;
     }
   }
 }
 
-/* ------- MOBILE ------- */
+/* MOBILE */
 @media (max-width: 650px) {
   .hero {
-    padding: 40px 20px;
-    min-height: 95vh;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.85),
-        rgba(255, 255, 255, 0.85)
-      ),
-      url("../img/bg-mobile.png");
+    min-height: 90vh;
+
+    background-image: url('../img/bg-mobile.png');
     background-size: cover;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 
     .hero-content {
-      text-align: left;
       width: 100%;
+      align-items: center;
+      text-align: center;
       gap: 18px;
+      margin-top: 40px;
 
       h1 {
-        font-size: 34px;
+        font-size: 28px;
       }
 
       p {
-        font-size: 14px;
-        width: 100%;
+        font-size: 15px;
+        width: 90%;
       }
 
       .btn-primary {
-        font-size: 15px;
-        padding: 10px 18px;
+        font-size: 16px;
+        padding: 12px 24px;
       }
     }
   }
